@@ -139,14 +139,28 @@ Here are some common commands that you can use with `choco`:
 
 Om de MySQL server te laten luisteren op alle beschikbare netwerk interfaces (inclusief 0.0.0.0), moet u het MySQL configuratie bestand aanpassen. Hier zijn de stappen om dat te doen:
 
-- Open het MySQL-configuratiebestand. Op Linux-systemen bevindt het bestand zich in /etc/mysql/mysql.conf.d/mysqld.cnf. Open het met cd /etc/mysql/mysql.conf.d/ en dan sudo nano mysqld.cnf.
+Open het MySQL-configuratiebestand. Op Linux-systemen bevindt het bestand zich in /etc/mysql/mysql.conf.d/mysqld.cnf.
 
-- Zoek naar de bind-address in de sectie [mysqld] verander de waarde in 0.0.0.0. Als het niet aanwezig is, kun je het toevoegen aan de [mysqld] sectie.
+- Open het met cd /etc/mysql/mysql.conf.d/ en dan sudo nano mysqld.cnf.
 
-- Sla de wijzigingen in het configuratiebestand op en sluit af.
+Zoek naar de bind-address in de sectie [mysqld] verander de waarde in 0.0.0.0. Als het niet aanwezig is, kun je het toevoegen aan de [mysqld] sectie.
 
-- Herstart de MySQL server. Op Linux-systemen kunt u dit doen met het commando sudo service mysql restart.
+Sla de wijzigingen in het configuratiebestand op en sluit af.
+
+Herstart de MySQL server. Op Linux-systemen kunt u dit doen met het commando
+
+- sudo service mysql restart.
 
 ## apache
 
--Zal de Apache service opstarten (= "enabled") bij booten van de VM? systemctl is-enabled apache2
+Zal de Apache service opstarten (= "enabled") bij booten van de VM?
+
+- systemctl is-enabled apache2
+
+Om te controleren of de SSH-server draait en op welke poort deze luistert, kun je de volgende twee commando's gebruiken:
+
+- systemctl status ssh
+
+Dit commando geeft de status van de SSH-server op het systeem, inclusief of deze actief is en welke poort het gebruikt.
+
+- netstat -tln | grep ssh
