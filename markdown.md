@@ -145,4 +145,4 @@ Om de MySQL server te laten luisteren op alle beschikbare netwerk interfaces (in
 
 - Sla de wijzigingen in het configuratiebestand op en sluit af.
 
-- Herstart de MySQL server om de wijzigingen van kracht te laten worden. Op Linux-systemen kunt u dit doen met het commando sudo service mysql restart.
+- Herstart de MySQL server. Op Linux-systemen kunt u dit doen met het commando sudo service mysql restart.
