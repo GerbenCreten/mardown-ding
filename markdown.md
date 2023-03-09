@@ -149,4 +149,4 @@ Om de MySQL server te laten luisteren op alle beschikbare netwerk interfaces (in
 
 ## apache
 
--Zal de Apache service opstarten (= "enabled") bij booten van de VM? Hoe controleer je dit? systemctl is-enabled apache2
+-Zal de Apache service opstarten (= "enabled") bij booten van de VM? systemctl is-enabled apache2
