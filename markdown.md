@@ -141,7 +141,7 @@ Om de MySQL server te laten luisteren op alle beschikbare netwerk interfaces (in
 
 - Open het MySQL-configuratiebestand. Op Linux-systemen bevindt het bestand zich in /etc/mysql/mysql.conf.d/mysqld.cnf. Open het met cd /etc/mysql/mysql.conf.d/ en dan sudo nano mysqld.cnf.
 
-- Zoek naar de bind-address in de sectie [mysqld] van het configuratiebestand. Als het aanwezig is, verander dan de waarde in 0.0.0.0. Als het niet aanwezig is, kun je het toevoegen aan de [mysqld] sectie.
+- Zoek naar de bind-address in de sectie [mysqld] verander de waarde in 0.0.0.0. Als het niet aanwezig is, kun je het toevoegen aan de [mysqld] sectie.
 
 - Sla de wijzigingen in het configuratiebestand op en sluit af.
 
